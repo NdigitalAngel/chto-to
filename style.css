@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+:root {
+  /* colors */
+  --primary: #FDB827;
+  --dark: #233506;
+  --light: #fff;
+  --bg: #FFF9F2;
+  /* sizes */
+  --container__width: 1170px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #fff;
+  color: var(--dark);
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+/* Layout */
+.container {
+  max-width: var(--container__width);
+  padding: 0 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46px 0;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+
+/* Firstscreen */
+.first-screen {
+  position: relative;
+  min-height: 100vh;
+}
+
+.first-screen__bg-segment {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 33%;
+  right: 0;
+  z-index: -1;
+  background-color: var(--primary);
+}
+
+.first-screen__bg-segment img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 280%;
+  top: 12%;
+}
+
+/* Ui elements */
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.menu a:not(:last-child) {
+  margin-right: 46px;
+}
