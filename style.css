@@ -3,6 +3,7 @@
 :root {
   /* colors */
   --primary: #FDB827;
+  --secondary: #FF800B;
   --dark: #233506;
   --light: #fff;
   --bg: #FFF9F2;
@@ -19,6 +20,7 @@ body {
   font-family: 'Fredoka', sans-serif;
   background-color: #fff;
   color: var(--dark);
+  font-size: 18px;
 }
 
 a {
@@ -30,6 +32,7 @@ a {
 .container {
   max-width: var(--container__width);
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header {
@@ -42,6 +45,10 @@ a {
 .header__actions {
   display: flex;
   align-items: center;
+}
+
+.header__actions .button:not(:last-child) {
+  margin-right: 12px;
 }
 
 /* Firstscreen */
@@ -77,9 +84,23 @@ a {
 }
 
 .logo span {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .menu a:not(:last-child) {
   margin-right: 46px;
+}
+
+.button {
+  padding: 16px 22px;
+  background-color: var(--primary);
+  color: var(--light);
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 50px;
+}
+
+.button__light {
+  background-color: var(--light);
+  color: var(--secondary);  
 }
